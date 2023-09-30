@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+<div class="wrapper">
+    <button class="btn red">Мы</button>
+    <button class="btn green">Кнопки</button>
+    <button class="btn blue">Вызывающие</button>
+    <button class="btn black">Попап</button>
+</div>
+<div class="popup closed">
+    <div class="overlay"></div>
+    <form action="">
+        <h3>Мы вам перезвоним</h3>
+        <button class="close-button" type="button">&#10006;</button>
+        <div class="input_group">
+            <input id="name" type="text" placeholder="Имя">
+            <label for="name">Имя</label>
+        </div>
+        <div class="input_group">
+            <input id="surname" type="text" placeholder="Фамилия">
+            <label for="surname">Фамилия</label>
+        </div>
+        <div class="input_group">
+            <textarea name="comment" id="comment" maxlength="360" placeholder="Оставьте комментарий"></textarea>
+            <label for="comment">Оставьте комментарий</label>
+            <div class="textarea_counter">Символов 0/360</div>
+        </div>
+        <div class="input_group checkbox-group">
+            <input type="checkbox" id="consent">
+            <label for="consent">Согласие на обработку персональных данных</label>
+        </div>
+        <input class="btn" type="submit" value="Оставить заявку" disabled> <!-- Кнопка изначально отключена -->
+    </form>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
